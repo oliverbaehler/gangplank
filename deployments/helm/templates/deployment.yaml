@@ -35,6 +35,9 @@ spec:
           envFrom:
             - secretRef:
                 name: {{ include "gangplank.fullname" . }}
+            {{- if .Values.envFrom }}
+              {{- toYaml .Values.envFrom | nindent 12 }}
+            {{- end }}
           {{- if .Values.envs }}
           env:
             {{- range $key, $val := .Values.envs }}

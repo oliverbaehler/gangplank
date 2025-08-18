@@ -47,6 +47,7 @@ ingress:
   tls: []
 
 envs: {}
+envFrom: []
 sensitiveEnvs:
   GANGPLANK_CONFIG_SESSION_SECURITY_KEY: session-security-key
 config:
