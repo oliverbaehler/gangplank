@@ -31,6 +31,9 @@ tolerations: []
 affinity: {}
 command: ["gangplank", "-config", "/etc/gangplank/config.yaml"]
 
+volumes: []
+volumeMounts: []
+
 service:
   type: ClusterIP
   port: 80
