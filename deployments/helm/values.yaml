@@ -22,7 +22,6 @@ image:
 
 replicas: 1
 imagePullSecrets: []
-podAnnotations: {}
 podSecurityContext: {}
 securityContext: {}
 resources: {}
@@ -30,6 +29,9 @@ nodeSelector: {}
 tolerations: []
 affinity: {}
 command: ["gangplank", "-config", "/etc/gangplank/config.yaml"]
+
+podAnnotations: {}
+podLabels: {}
 
 volumes: []
 volumeMounts: []
